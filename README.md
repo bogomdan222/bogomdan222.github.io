@@ -1,1 +1,1 @@
-# bogomdan222.github.com
+# bogomdan222.github.io
