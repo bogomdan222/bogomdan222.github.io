@@ -1,0 +1,252 @@
+/*@import url('https://fonts.googleapis.com/css?family=Titillium Web&display=swap'); /*Honk*/
+
+/*body {
+	font-family: Titillium Web, serif;
+}*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+body {
+	height: 100vh;
+	background-image: url("../images/fon.jpeg");
+	background-size: cover;
+	background-position: center;
+/*	font-family: Michroma, serif;*/
+}
+
+header {
+	background-color: white;
+}
+
+.header_menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 10px black;
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: 900;
+	font-family: sans-serif;
+	color: #000;
+	margin-left: 50px;
+	transition: .5s;
+}
+
+/*.logo {
+	animation: myAnim 2s ease 0s infinite normal none;
+}
+
+@keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(-68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+}*/
+
+.logo:hover {
+	transform: scale(1.2);
+/*	animation: none;*/
+}
+
+.pc ul {
+	display: flex;
+	align-items: center;
+}
+
+.pc>ul>li {
+	margin: 0px 15px;
+}
+
+.pc>ul>li a {
+	font-size: 18px;
+	color: black;
+	transition: 0.1s;
+}
+
+.pc>ul>li>a:hover {
+	background-color: black;
+	color: white;
+	padding: 4px 4px;
+	margin: 0px -4px;
+}
+
+.pc>ul>li:hover {
+	transform: scale(1.1);
+}
+
+.pc>ul>li>ul {
+	display: none;
+	position: absolute;
+	background-color: #C1C1C1FF;
+}
+
+.pc>ul>li>ul>li {
+	display: block;
+	border-style: solid;
+	border-color: #757575FF;
+	border-width: 0.5px;
+}
+
+.pc>ul>li:hover ul {
+	display: initial;
+	left: 10px;
+	top: 23px;
+}
+
+.pc>ul>li>ul>li:hover {
+	background-color: black;
+}
+
+.pc>ul>li>ul>li>a:hover {
+	color: white;
+}
+
+.pc>ul>li>ul>li>a {
+	display:flex;
+	padding-right: 35px;
+	padding-left: 5px;
+}
+
+.OPPO {
+	display: none;
+}
+
+@media (max-width: 664px) {
+	.header_menu {
+		background-color: rgb(28, 28, 28);
+	}
+
+	.logo {
+		color: #C9C9C9FF;
+		border-radius: 5px;
+		box-shadow: 0px 0px 17px 0px #DFE4E6FF;
+	}
+
+	.pc {
+		display: none;
+	}
+
+	.OPPO {
+		display: initial;
+	}
+
+	.OPPO-ul {
+		display: none;
+		position: absolute;
+		right: 0.5px;
+	}
+
+	.OPPO-ul>ul>li {
+		border-style: solid;
+		border-color: white;
+		border-width: 0.5px;
+		border-radius: 3px;
+		background-color: rgb(28, 28, 28);
+	}
+
+	.OPPO-ul>ul>li>a {
+		display: flex;
+		color: white;
+		padding: 10px;
+	}
+
+	.OPPO-ul>ul>li>ul {
+		display: none;
+		position: absolute;
+		right: 110px;
+		top: 5px;
+		box-shadow: 3px 2px 15px 0px black;
+	}
+
+	#brawl {
+		top: 132px;
+	}
+
+	.OPPO-ul>ul>li>ul>li {
+		border-style: solid;
+		border-color: white;
+		border-width: 0.5px;
+		border-radius: 3px;
+		background-color: rgb(28, 28, 28);
+	}
+
+	.OPPO-ul>ul>li>ul>li>a {
+		display: flex;
+		padding: 10px;
+		color: white;
+		justify-content: flex-end;
+	}
+
+	.OPPO-ul>ul>li>ul>li>a:hover {
+		background-color: rgb(70, 70, 70);
+	}
+
+	.btn {
+		border: none;
+		font-size: 32px;
+		color: white;
+		background-color: rgb(28, 28, 28);
+		padding-inline: 10px;
+		padding-bottom: 3px;
+		cursor: pointer;
+	}
+
+	.btn:hover {
+		background-color: rgb(40, 40, 40);
+	}
+
+	.n-btn_OPPO:hover .OPPO-ul {
+		display: inherit;
+	}
+
+	.OPPO-ul>ul>li>a:hover {
+		background-color: rgb(70, 70, 70);
+	}
+	
+	.OPPO-ul>ul>li:hover ul {
+		display: block;
+	}
+}
